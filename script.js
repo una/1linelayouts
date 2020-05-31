@@ -1,16 +1,17 @@
 // Primary Function to Run Code Updates
 
 const populateCode = (exNum, tabContent) => {
-  const tabArea = document.querySelector(`.${exNum} .code-area`);
+  const tabArea = document.querySelector(`.${exNum} .code-container`);
+  console.log(eval(exNum).eval(tabContent))
   tabArea.innerHTML = exNum[tabContent]
 }
 
-// Ex1: Embedded Sidebar
+// Ex1: Absolutely Centered
 
 const ex1 = {
-  html: `<div class="parent" >
+  "html": `<div class="parent" >
     <div class="child" contenteditable>:)</div>`,
-  css: `.parent {
+  "css": `.parent {
     display: grid;
     place-items: center;
 
@@ -35,9 +36,9 @@ const ex1 = {
 
 // Events
 
-document.querySelector('.ex1 .html-button').addEventListener('click', function() {
-  codeContent = ex1Html;
-  updateCodeContent(codeContent, 'ex1');
-});
+// document.querySelector('.ex1 .html-button').addEventListener('click', function() {
+//   codeContent = ex1Html;
+//   updateCodeContent(codeContent, 'ex1');
+// });
 
 populateCode('ex1', 'css')
