@@ -37,11 +37,19 @@ const ex1 = {
 
 // Events
 
-[...document.querySelectorAll('.tab-area button')].forEach((button) => {
+[...document.querySelectorAll('.tab-area button')].forEach(button => {
   button.addEventListener('click', (event) => {
-  console.log(event.target.innerText).tolowercase()
+    let lang = event.target.innerText.toLowerCase();
+    const exNum = 'ex1';
+    if (lang === 'css') {
+      document.querySelector(`.${exNum} .html`).style.display = 'none';
+      document.querySelector(`.${exNum} .css`).style.display = 'block';
+    } else {
+      document.querySelector(`.${exNum} .css`).style.display = 'none';
+      document.querySelector(`.${exNum} .html`).style.display = 'block';
+    }
   })
-})
+});
 
 
 populateCode('ex1')
