@@ -75,23 +75,32 @@ ol {
 .ex-section {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  grid-gap: 
+  grid-gap: 10px;
+  height: 400px;
 }
 
 .ex-container {
   resize: both;
+  position: relative;
   overflow: hidden;
-  flex: 1;
+  height: 100%;
+  width: 100%;
 }
 
 .ex-container::before {
-  content: 'resize me!';
+  content: "resize me!";
   position: absolute;
   bottom: 10px;
-  right: 20px;
+  right: 10px;
   display: block;
 }
 
+.code-area {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
 .code-container {
-  flex: 1;
+  white-
+  display: none;
 }

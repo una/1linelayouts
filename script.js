@@ -2,17 +2,22 @@
 
 const populateCode = (exNum) => {
   const demoArea = document.querySelector(`.${exNum} .ex-container`);
-  const tabArea = document.querySelector(`.${exNum} .code-container`);
+  const cssArea = document.querySelector(`.${exNum} .css`);
+  const htmlArea = document.querySelector(`.${exNum} .html`);
   demoArea.innerHTML = eval(exNum).html;
-  tabArea.innerHTML = eval(exNum).css
+  cssArea.innerHTML = eval(exNum).css;
+  htmlArea.innerText = eval(exNum).html;
+  cssArea.style.display = 'block';
 }
 
 // Ex1: Absolutely Centered
 
 const ex1 = {
-  "html": `<div class="parent blue" >
+  "html": `
+    <div class="parent blue" >
     <div class="child coral" contenteditable>:)</div>`,
-  "css": `.parent {
+  "css": `
+  .parent {
     display: grid;
     place-items: center;
 
