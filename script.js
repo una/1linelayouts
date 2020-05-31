@@ -35,12 +35,22 @@ const ex1 = {
   }`
 };
 
+const ex2 = {
+  html: `
+    <div class="parent">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+    </div>`,
+  css: ``
+}
+
 // Events
 
 [...document.querySelectorAll(".tab-area button")].forEach(button => {
   button.addEventListener("click", event => {
     let lang = event.target.innerText.toLowerCase();
-    const exNum = "ex1";
+    const exNum = event.target.parentElement.parentElement.parentElement.classList[1];
     if (lang === "css") {
       document.querySelector(`.${exNum} .code-container.html`).style.display = "none";
       document.querySelector(`.${exNum} .tab.html`).classList.remove("active");

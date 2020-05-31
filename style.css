@@ -7,6 +7,7 @@
   --lavender: hsl(283, 24%, 81%);
   --light-gray-blue: hsl(182, 29%, 96%);
 
+  --pageMax: 1260px;
   --headerHeight: 60px;
   --middleHeight: 300px;
   --footerHeight: 100px;
@@ -29,17 +30,6 @@ ol {
 style,
 code {
   font-family: "Inconsolata", monospace;
-}
-
-.red,
-.orange,
-.yellow,
-.green,
-.blue,
-.purple {
-  /* This is just styling the text in the boxes to be centered */
-  display: grid;
-  place-items: center;
 }
 
 .coral {
@@ -133,4 +123,14 @@ code {
 .tab-area button.active {
   background: var(--light-gray-blue);
   outline: 1px solid var(--blue);
+}
+
+section {
+  max-width: var(--pageMax);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.codepen-link {
+  text-align: right;
 }
