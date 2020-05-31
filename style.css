@@ -1,11 +1,59 @@
-/* CSS files add styling rules to your content */
+:root {
+  --coral: hsl(23, 83%, 77%);
+  --pink: hsl(353, 55%, 84%);
+  --yellow: hsl(42, 100%, 81%);
+  --green: hsl(118, 100%, 90%);
+  --blue: hsl(187, 61%, 74%);
+  --lavender: hsl(283, 24%, 81%);
 
-body {
-  font-family: system-ui, sans-serif;
-  margin: 2em;
+  --headerHeight: 60px;
+  --middleHeight: 300px;
+  --footerHeight: 100px;
 }
 
-h1 {
-  font-style: italic;
-  color: #373fff;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.red,
+.orange,
+.yellow,
+.green,
+.blue,
+.purple {
+  // This is just styling the text in the boxes to be centered
+  display: grid;
+  place-items: center;
+}
+
+.red {
+  background-color: var(--coral);
+}
+
+.orange {
+  background-color: var(--pink);
+}
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+.green {
+  background-color: var(--green);
+}
+
+.blue {
+  background-color: var(--blue);
+}
+
+.purple {
+  background-color: var(--lavender);
 }
