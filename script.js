@@ -1,44 +1,42 @@
 // Primary Function to Run Code Updates
 
-const populateCode = (exNum, tabContent) => {
+const populateCode = (exNum) => {
+  const demoArea = document.querySelector(`.${exNum} .ex-container`);
   const tabArea = document.querySelector(`.${exNum} .code-container`);
-  console.log(eval(exNum).eval(tabContent))
-  tabArea.innerHTML = exNum[tabContent]
+  demoArea.innerHTML = eval(exNum).html;
+  tabArea.innerHTML = eval(exNum).css
 }
 
 // Ex1: Absolutely Centered
 
 const ex1 = {
-  "html": `<div class="parent" >
-    <div class="child" contenteditable>:)</div>`,
+  "html": `<div class="parent blue" >
+    <div class="child coral" contenteditable>:)</div>`,
   "css": `.parent {
     display: grid;
     place-items: center;
 
-    background: lightblue;
-    width: 500px;
-    height: 500px;
-
-    resize: both;
-    overflow: auto;
+    width: 100%;
+    height: 100%;
   }
 
   .child {
-    // etc.
-    padding: 0.5rem;
+    /* etc. */
     border-radius: 10px;
-    border: 1px solid red;
-    background: lightpink;
     font-size: 2rem;
     text-align: center;
+    padding: 0.5rem;
   }`
 };
 
 // Events
 
-// document.querySelector('.ex1 .html-button').addEventListener('click', function() {
-//   codeContent = ex1Html;
-//   updateCodeContent(codeContent, 'ex1');
-// });
+document.querySelector('.ex1 .html-tab').addEventListener('click', function() {
+  populateCode('ex1', 'html')
+});
+document.querySelector('.ex1 .css-tab').addEventListener('click', function() {
+  populateCode('ex1', 'html')
+});
 
-populateCode('ex1', 'css')
+
+populateCode('ex1')

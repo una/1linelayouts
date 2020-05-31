@@ -29,16 +29,16 @@ ol {
 .green,
 .blue,
 .purple {
-  // This is just styling the text in the boxes to be centered
+  /* This is just styling the text in the boxes to be centered */
   display: grid;
   place-items: center;
 }
 
-.red {
+.coral {
   background-color: var(--coral);
 }
 
-.orange {
+.pink {
   background-color: var(--pink);
 }
 
@@ -56,4 +56,42 @@ ol {
 
 .purple {
   background-color: var(--lavender);
+}
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.section-title code {
+  display: block;
+  width: auto;
+  font-size: 0.8em;
+  margin-left: 2em;
+  background: var(--green);
+}
+
+.ex-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 
+}
+
+.ex-container {
+  resize: both;
+  overflow: hidden;
+  flex: 1;
+}
+
+.ex-container::before {
+  content: 'resize me!';
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  display: block;
+}
+
+.code-container {
+  flex: 1;
 }
