@@ -10,6 +10,7 @@ const populateCode = (exNum) => {
   cssArea.style.display = 'block';
 }
 
+
 // Ex1: Absolutely Centered
 
 const ex1 = {
@@ -36,12 +37,11 @@ const ex1 = {
 
 // Events
 
-document.querySelector('.ex1 .html-tab').addEventListener('click', function() {
-  populateCode('ex1', 'html')
-});
-document.querySelector('.ex1 .css-tab').addEventListener('click', function() {
-  populateCode('ex1', 'html')
-});
+[...document.querySelectorAll('.tab-area button')].forEach((button) => {
+  button.addEventListener('click', (event) => {
+  console.log(event.target.innerText).tolowercase()
+  })
+})
 
 
 populateCode('ex1')

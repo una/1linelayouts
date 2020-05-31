@@ -11,6 +11,8 @@
   --footerHeight: 100px;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
 body {
   margin: 0;
   padding: 0;
@@ -21,6 +23,11 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+}
+
+style,
+code {
+  font-family: "Inconsolata", monospace;
 }
 
 .red,
@@ -83,6 +90,7 @@ ol {
   resize: both;
   position: relative;
   overflow: hidden;
+  min-height: 200px;
   height: 100%;
   width: 100%;
 }
@@ -101,6 +109,6 @@ ol {
 }
 
 .code-container {
-  white-
+  white-space: pre-wrap;
   display: none;
 }
