@@ -82,7 +82,7 @@ code {
 
 .ex-section {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 1rem;
   height: 400px;
 }
@@ -105,7 +105,6 @@ code {
 
 .code-area {
   display: grid;
-  grid-gap: 1rem;
   grid-template-rows: auto 1fr auto;
 }
 
@@ -115,6 +114,7 @@ code {
   min-height: 250px;
   overflow-y: scroll;
   background: var(--light-gray-blue);
+  margin-bottom: 1rem;
 }
 
 .tab-area {
@@ -125,5 +125,12 @@ code {
 }
 
 .tab-area button {
-  background: var(--lavender);
+  border: none;
+  
+  padding: 0.5rem;
+}
+
+.tab-area button.active {
+  background: var(--light-gray-blue);
+  outline: 1px solid var(--blue);
 }

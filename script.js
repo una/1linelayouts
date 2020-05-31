@@ -1,23 +1,23 @@
 // Primary Function to Run Code Updates
 
-const populateCode = (exNum) => {
+const populateCode = exNum => {
   const demoArea = document.querySelector(`.${exNum} .ex-container`);
-  const cssArea = document.querySelector(`.${exNum} .css`);
-  const htmlArea = document.querySelector(`.${exNum} .html`);
+  const cssArea = document.querySelector(`.${exNum} .code-container.css`);
+  const htmlArea = document.querySelector(`.${exNum} .code-container.html`);
   demoArea.innerHTML = eval(exNum).html;
   cssArea.innerHTML = eval(exNum).css;
+  document.querySelector(`.${exNum} .tab.css`).classList.add("active");
   htmlArea.innerText = eval(exNum).html;
-  cssArea.style.display = 'block';
-}
-
+  cssArea.style.display = "block";
+};
 
 // Ex1: Absolutely Centered
 
 const ex1 = {
-  "html": `
+  html: `
     <div class="parent blue" >
     <div class="child coral" contenteditable>:)</div>`,
-  "css": `
+  css: `
   .parent {
     display: grid;
     place-items: center;
@@ -37,19 +37,22 @@ const ex1 = {
 
 // Events
 
-[...document.querySelectorAll('.tab-area button')].forEach(button => {
-  button.addEventListener('click', (event) => {
+[...document.querySelectorAll(".tab-area button")].forEach(button => {
+  button.addEventListener("click", event => {
     let lang = event.target.innerText.toLowerCase();
-    const exNum = 'ex1';
-    if (lang === 'css') {
-      document.querySelector(`.${exNum} .html`).style.display = 'none';
-      document.querySelector(`.${exNum} .css`).style.display = 'block';
+    const exNum = "ex1";
+    if (lang === "css") {
+      document.querySelector(`.${exNum} .code-container.html`).style.display = "none";
+      document.querySelector(`.${exNum} .tab.html`).classList.remove("active");
+      document.querySelector(`.${exNum} .code-container.css`).style.display = "block";
+      document.querySelector(`.${exNum} .tab.css`).classList.add("active");
     } else {
-      document.querySelector(`.${exNum} .css`).style.display = 'none';
-      document.querySelector(`.${exNum} .html`).style.display = 'block';
+      document.querySelector(`.${exNum} .code-container.css`).style.display = "none";
+      document.querySelector(`.${exNum} .tab.css`).classList.remove("active");
+      document.querySelector(`.${exNum} .code-container.html`).style.display = "block";
+      document.querySelector(`.${exNum} .tab.html`).classList.add("active");
     }
-  })
+  });
 });
 
-
-populateCode('ex1')
+populateCode("ex1");
