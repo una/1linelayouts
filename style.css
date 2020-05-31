@@ -67,7 +67,6 @@ code {
   width: auto;
   font-size: 0.8em;
   margin-left: 2em;
-  background: var(--green);
 }
 
 .ex-section {
@@ -125,7 +124,7 @@ code {
   outline: 1px solid var(--blue);
 }
 
-section {
+.section-container {
   max-width: var(--pageMax);
   margin: 0 auto;
   padding: 1rem;
@@ -133,4 +132,9 @@ section {
 
 .codepen-link {
   text-align: right;
+}
+
+.parent {
+  width: 100%;
+  height: 100%;
 }

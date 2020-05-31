@@ -15,10 +15,10 @@ const populateCode = exNum => {
 
 const ex1 = {
   html: `
-    <div class="parent blue" >
-    <div class="child coral" contenteditable>:)</div>`,
+  <div class="parent blue" >
+  <div class="child coral" contenteditable>:)</div>`,
   css: `
-  .parent {
+  .ex1 .parent {
     display: grid;
     place-items: center;
 
@@ -26,7 +26,7 @@ const ex1 = {
     height: 100%;
   }
 
-  .child {
+  .ex1 .child {
     /* etc. */
     border-radius: 10px;
     font-size: 2rem;
@@ -37,13 +37,32 @@ const ex1 = {
 
 const ex2 = {
   html: `
-    <div class="parent">
-      <div class="child">1</div>
-      <div class="child">2</div>
-      <div class="child">3</div>
-    </div>`,
-  css: ``
-}
+  <div class="parent pink">
+    <div class="child green">1</div>
+    <div class="child green">2</div>
+    <div class="child green">3</div>
+  </div>`,
+  css: `
+  .ex2 .parent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .ex2 .child {
+    /*  If we don't want the items to stretch
+        on new lines: */
+    flex: 0 1 200px;
+    /*  If we do want the items to stretch: */
+    flex: 1 1 200px;
+    margin: 5px;
+
+    /* etc */
+    border-radius: 10px;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.5rem;
+  }`
+};
 
 // Events
 
@@ -66,3 +85,4 @@ const ex2 = {
 });
 
 populateCode("ex1");
+populateCode("ex2");
