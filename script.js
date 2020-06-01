@@ -212,24 +212,25 @@ const ex8 = {
   html: `
   <div class="parent white">
     <div class="card yellow">
-      <h1>Title - Card 1</h1>
+      <h3>Title - Card 1</h3>
+      <p>Medium length description with a few more words here.</p>
       <div class="visual pink"></div>
-      <p>Medium length description. Let's add a few more words here.</p>
     </div>
     <div class="card yellow">
-      <h1>Title - Card 2</h1>
+      <h3>Title - Card 2</h3>
+      <p>Long Description. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
       <div class="visual blue"></div>
-      <p>Long Description. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed est error repellat veritatis.</p>
     </div>
     <div class="card yellow">
-      <h1>Title - Card 3</h1>
-      <div class="visual green"></div>
+      <h3>Title - Card 3</h3>
       <p>Short Description.</p>
+      <div class="visual green"></div>
     </div>
   </div>
   `,
   css: `
   .ex8 .parent {
+    height: auto;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
@@ -238,13 +239,17 @@ const ex8 = {
   .ex8 .visual {
     height: 100px;
     width: 100%;
-    margin: 0.5rem 0;
   }
 
   .ex8 .card {
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
+    padding: 1rem;
+    justify-content: space-between;
+  }
+
+  .ex8 h3 {
+    margin: 0
   }`,
   codepen: 'https://codepen.io/una/pen/ExPYomq'
 };
