@@ -138,3 +138,13 @@ code {
   width: 100%;
   height: 100%;
 }
+
+/*  For Demos */
+
+.box {
+  font-size: 2rem;
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+  border-radius: 1rem;
+}

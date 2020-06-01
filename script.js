@@ -37,7 +37,9 @@ const populateCode = exNum => {
 const ex1 = {
   html: `
   <div class="parent blue" >
-  <div class="child coral" contenteditable>:)</div>`,
+  <div class="box coral" contenteditable>
+    :)
+  </div>`,
   css: `
   .ex1 .parent {
     display: grid;
@@ -45,23 +47,16 @@ const ex1 = {
 
     width: 100%;
     height: 100%;
-  }
-
-  .ex1 .child {
-    /* etc. */
-    border-radius: 10px;
-    font-size: 2rem;
-    text-align: center;
-    padding: 0.5rem;
-  }`
+  }`,
+  codepen: 'https://codepen.io/una/pen/YzyYbBx'
 };
 
 const ex2 = {
   html: `
   <div class="parent pink">
-    <div class="child green">1</div>
-    <div class="child green">2</div>
-    <div class="child green">3</div>
+    <div class="box green">1</div>
+    <div class="box green">2</div>
+    <div class="box green">3</div>
   </div>`,
   css: `
   .ex2 .parent {
@@ -69,20 +64,15 @@ const ex2 = {
     flex-wrap: wrap;
   }
 
-  .ex2 .child {
+  .ex2 .box {
     /*  If we don't want the items to stretch
         on new lines: */
     flex: 0 1 200px;
     /*  If we do want the items to stretch: */
     flex: 1 1 200px;
     margin: 5px;
-
-    /* etc */
-    border-radius: 10px;
-    font-size: 2rem;
-    text-align: center;
-    padding: 0.5rem;
-  }`
+  }`,
+  codepen: 'https://codepen.io/una/pen/WNQdBza'
 };
 
 const ex3 = {
@@ -94,11 +84,6 @@ const ex3 = {
     <div class="content blue" contenteditable>
       This element takes the second grid position (1fr), meaning
       it takes up the rest of the remaining space.
-      <br></br>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      Omnis nulla architecto maxime modi nisi. Quas saepe dolorum, 
-      architecto quia fugit nulla! Natus, iure eveniet ex iusto 
-      tempora animi quibusdam porro?
     </div>
   </div>
   `,
@@ -106,7 +91,8 @@ const ex3 = {
   .ex3 .parent {
     display: grid;
     grid-template-columns: minmax(150px, 25%) 1fr;
-  }`
+  }`,
+  codepen: 'https://codepen.io/una/pen/gOaNeWL'
 };
 
 populateCode("ex1");
