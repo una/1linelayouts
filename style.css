@@ -1,10 +1,16 @@
 :root {
   --coral: hsl(23, 83%, 82%);
+  --coral--b: hsl(23, 99%, 75%);
   --pink: hsl(335, 52%, 92%);
-  --yellow: hsl(42, 100%, 83%);
-  --green: hsl(100, 60%, 93%);
+  --pink--b: hsl(335, 82%, 86%);
+  --yellow: hsl(42, 97%, 85%);
+  --yellow--b: hsl(42, 100%, 73%);
+  --green: hsl(100, 64%, 86%);
+  --green--b: hsl(100, 41%, 76%);
   --blue: hsl(187, 61%, 79%);
-  --lavender: hsl(283, 24%, 86%);
+  --blue--b: hsl(187, 54%, 68%);
+  --purple: hsl(283, 24%, 86%);
+  --purple--b: hsl(283, 43%, 80%);
   --light-gray-blue: hsl(182, 29%, 96%);
 
   --pageMax: 1260px;
@@ -21,6 +27,10 @@ body {
   font-family: system-ui, sans-serif;
 }
 
+h2 {
+  margin: 0;
+}
+
 ul,
 ol {
   margin: 0;
@@ -34,26 +44,32 @@ code {
 
 .coral {
   background-color: var(--coral);
+  border: 1px solid var(--coral--b);
 }
 
 .pink {
   background-color: var(--pink);
+  border: 1px solid var(--pink--b);
 }
 
 .yellow {
   background-color: var(--yellow);
+  border: 1px solid var(--yellow--b);
 }
 
 .green {
   background-color: var(--green);
+  border: 1px solid var(--green--b);
 }
 
 .blue {
   background-color: var(--blue);
+  border: 1px solid var(--blue--b);
 }
 
 .purple {
-  background-color: var(--lavender);
+  background-color: var(--purple);
+  border: 1px solid var(--purple--b)
 }
 
 section:nth-child(2n) {
@@ -143,7 +159,7 @@ section:nth-child(2n) .tab-area button.active {
 .section-container {
   max-width: var(--pageMax);
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4rem 2rem;
 }
 
 .codepen-link {
@@ -195,11 +211,13 @@ section:nth-child(2n) .tab-area button.active {
   display: grid;
   place-items: center;
   border-radius: 1rem;
+  border-style: dashed;
 }
 
 .ex-container .section {
   font-size: 1.5rem;
   padding: 1rem;
+  border-style: dashed;
 }
 
 @media screen and (min-width: 811px) {
