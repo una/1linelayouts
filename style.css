@@ -2,7 +2,7 @@
   --coral: hsl(23, 83%, 77%);
   --pink: hsl(353, 55%, 84%);
   --yellow: hsl(42, 100%, 81%);
-  --green: hsl(118, 100%, 90%);
+  --green: hsl(100, 60%, 90%);
   --blue: hsl(187, 61%, 74%);
   --lavender: hsl(283, 24%, 81%);
   --light-gray-blue: hsl(182, 29%, 96%);
@@ -82,7 +82,6 @@ section:nth-child(2n) .tab-area button.active {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 2rem;
-  height: 400px;
 }
 
 .ex-container {
@@ -92,6 +91,7 @@ section:nth-child(2n) .tab-area button.active {
   height: 100%;
   width: 100%;
   z-index: 2;
+  box-shadow: 0 0 20px -10px hsl(187, 97%, 24%)
 }
 
 /* .ex-container::before {
@@ -111,7 +111,6 @@ section:nth-child(2n) .tab-area button.active {
 .code-container {
   white-space: pre-wrap;
   display: none;
-  min-height: 250px;
   overflow-y: scroll;
   background-color: var(--light-gray-blue);
   margin-bottom: 1rem;
@@ -160,10 +159,14 @@ section:nth-child(2n) .tab-area button.active {
 }
 
 .taglist li {
-    padding: 0.2rem 0.5rem;
-    border-radius: 1rem;
-    font-size: 14px;
-    list-style: none;
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+  font-size: 14px;
+  list-style: none;
+}
+
+.taglist li + li {
+  margin-left: 0.5rem;
 }
 
 .meta-area {
@@ -196,4 +199,10 @@ section:nth-child(2n) .tab-area button.active {
 .ex-container .section {
   font-size: 1.5rem;
   padding: 1rem;
+}
+
+@media screen and (min-width: 811px) {
+  .ex-section {
+    height: 400px;
+  }
 }
