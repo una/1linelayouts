@@ -137,6 +137,7 @@ section:nth-child(2n) .tab-area button.active {
   border: 1px solid var(--blue);
   border-bottom: none;
   z-index: 1;
+  background: var(--light-gray-blue);
 }
 
 .section-container {
@@ -154,6 +155,34 @@ section:nth-child(2n) .tab-area button.active {
   height: 100%;
 }
 
+.taglist {
+  display: flex;
+}
+
+.taglist li {
+    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
+    font-size: 14px;
+    list-style: none;
+}
+
+.meta-area {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.support-area {
+  display: grid;
+  justify-content: flex-end;
+}
+
+.support-area span {
+  justify-self: flex-end;
+  margin-bottom: 0.25rem;
+}
+
 /*  For Demos */
 
 .box {
@@ -167,15 +196,4 @@ section:nth-child(2n) .tab-area button.active {
 .ex-container .section {
   font-size: 1.5rem;
   padding: 1rem;
-}
-
-.taglist {
-  di
-}
-
-.taglist li {
-    padding: 0.2rem 0.5rem;
-    border-radius: 1rem;
-    font-size: 14px;
-    list-style: none;
 }
