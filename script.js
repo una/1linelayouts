@@ -114,15 +114,38 @@ const ex4 = {
 const ex5 = {
   html: `
   <div class="parent">
-    <header class="blue section">Header</header>
-    <main class="coral section">Main</main>
-    <footer class="purple section">Footer Content</footer>
+    <header class="pink section">Header</header>
+    <div class="left-side blue section" contenteditable>Left Sidebar</div>
+    <main class="section coral" contenteditable> Main Content</main>
+    <div class="right-side yellow section" contenteditable>Right Sidebar</div>
+    <footer class="green section">Footer</footer>
   </div>
   `,
   css: `
-  .ex4 .parent {
+  .ex5 .parent {
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template: auto 1fr auto / auto 1fr auto
+  }
+  
+  .ex5 header {
+    padding: 2rem;
+    grid-column: 1 / 4;
+  }
+
+  .ex5 .left-side {
+    grid-column: 1 / 2;
+  }
+
+  .ex5 main {
+    grid-column: 2 / 3;
+  }
+
+  .ex5 .right-side {
+    grid-column: 3 / 4;
+  }
+
+  .ex5 footer {
+    grid-column: 1 / 4;
   }`,
   codepen: 'https://codepen.io/una/pen/bGVXPWB'
 };

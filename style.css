@@ -1,10 +1,10 @@
 :root {
-  --coral: hsl(23, 83%, 77%);
-  --pink: hsl(353, 55%, 84%);
-  --yellow: hsl(42, 100%, 81%);
-  --green: hsl(100, 60%, 90%);
-  --blue: hsl(187, 61%, 74%);
-  --lavender: hsl(283, 24%, 81%);
+  --coral: hsl(23, 83%, 82%);
+  --pink: hsl(335, 52%, 92%);
+  --yellow: hsl(42, 100%, 83%);
+  --green: hsl(100, 60%, 93%);
+  --blue: hsl(187, 61%, 79%);
+  --lavender: hsl(283, 24%, 86%);
   --light-gray-blue: hsl(182, 29%, 96%);
 
   --pageMax: 1260px;
@@ -106,6 +106,7 @@ section:nth-child(2n) .tab-area button.active {
 .code-area {
   display: grid;
   grid-template-rows: auto 1fr auto;
+  height: 400px;
 }
 
 .code-container {
