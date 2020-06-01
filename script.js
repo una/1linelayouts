@@ -78,10 +78,10 @@ const ex2 = {
 const ex3 = {
   html: `
   <div class="parent">
-    <div class="sidebar pink" contenteditable>
+    <div class="section pink" contenteditable>
     Min: 150px / Max: 25%
     </div>
-    <div class="content blue" contenteditable>
+    <div class="section blue" contenteditable>
       This element takes the second grid position (1fr), meaning
       it takes up the rest of the remaining space.
     </div>
@@ -97,10 +97,11 @@ const ex3 = {
 
 const ex4 = {
   html: `
-<div class="parent">
-  <header class="blue">Header</header>
-  <main class="coral">Main</main>
-  <footer class="purple">Footer Content</footer>
+  <div class="parent">
+    <header class="blue section">Header</header>
+    <main class="coral section">Main</main>
+    <footer class="purple section">Footer Content</footer>
+  </div>
   `,
   css: `
   .ex4 .parent {

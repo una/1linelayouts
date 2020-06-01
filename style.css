@@ -56,6 +56,15 @@ code {
   background-color: var(--lavender);
 }
 
+section:nth-child(2n) {
+  background-color: var(--light-gray-blue);  
+}
+
+section:nth-child(2n) .code-container,
+section:nth-child(2n) .tab-area button.active {
+  background-color: white;
+}
+
 .section-title {
   display: flex;
   flex-direction: column;
@@ -72,7 +81,7 @@ code {
 .ex-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   height: 400px;
 }
 
@@ -82,15 +91,17 @@ code {
   overflow: hidden;
   height: 100%;
   width: 100%;
+  border: 1px solid gray;
 }
 
-.ex-container::before {
+/* .ex-container::before {
   content: "resize me!";
+  background-color: white;
   position: absolute;
   bottom: 10px;
   right: 10px;
   display: block;
-}
+} */
 
 .code-area {
   display: grid;
@@ -102,8 +113,11 @@ code {
   display: none;
   min-height: 250px;
   overflow-y: scroll;
-  background: var(--light-gray-blue);
+  background-color: var(--light-gray-blue);
   margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--blue);
+  margin-top: -1px;
 }
 
 .tab-area {
@@ -115,19 +129,20 @@ code {
 
 .tab-area button {
   border: none;
-  
+  border-radius: 0.5rem 0.5rem 0 0;
   padding: 0.5rem;
 }
 
 .tab-area button.active {
-  background: var(--light-gray-blue);
-  outline: 1px solid var(--blue);
+  border: 1px solid var(--blue);
+  border-bottom: none;
+  z-index: 1;
 }
 
 .section-container {
   max-width: var(--pageMax);
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .codepen-link {
@@ -147,4 +162,9 @@ code {
   display: grid;
   place-items: center;
   border-radius: 1rem;
+}
+
+.ex-container .section {
+  font-size: 1.5rem;
+  padding: 1rem;
 }
