@@ -154,7 +154,7 @@ const ex6 = {
   html: `
   <div class="parent white">
     <div class="span-12 green section">Span 12</div>
-    <div class="span-6 purple section">Span 6</div>
+    <div class="span-6 coral section">Span 6</div>
     <div class="span-4 blue section">Span 4</div>
     <div class="span-2 yellow section">Span 2</div>
   </div>
@@ -193,10 +193,10 @@ const ex6 = {
 const ex7 = {
   html: `
   <div class="parent white">
-    <div class="span-12 green section">Span 12</div>
-    <div class="span-6 purple section">Span 6</div>
-    <div class="span-4 blue section">Span 4</div>
-    <div class="span-2 yellow section">Span 2</div>
+    <div class="box pink">1</div>
+    <div class="box purple">2</div>
+    <div class="box blue">3</div>
+    <div class="box green">4</div>
   </div>
   `,
   css: `
@@ -204,31 +204,49 @@ const ex7 = {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-  
-  .ex6 .span-12 {
-    grid-column: 1 / 13;
-  }
-
-  .ex6 .span-6 {
-    grid-column: 1 / 7;
-  }
-
-  .ex6 .span-4 {
-    grid-column: 4 / 9;
-  }
-
-  .ex6 .span-2 {
-    grid-column: 3 / 5;
-  }
-
-  /* centering text */
-  .ex6 .section {
-    display: grid;
-    place-items: center;
-    text-align: center
   }`,
   codepen: 'https://codepen.io/una/pen/oNbvNQv'
+};
+
+const ex8 = {
+  html: `
+  <div class="parent white">
+    <div class="card yellow">
+      <h1>Title - Card 1</h1>
+      <div class="visual pink"></div>
+      <p>Medium length description. Let's add a few more words here.</p>
+    </div>
+    <div class="card yellow">
+      <h1>Title - Card 2</h1>
+      <div class="visual blue"></div>
+      <p>Long Description. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed est error repellat veritatis.</p>
+    </div>
+    <div class="card yellow">
+      <h1>Title - Card 3</h1>
+      <div class="visual green"></div>
+      <p>Short Description.</p>
+    </div>
+  </div>
+  `,
+  css: `
+  .ex8 .parent {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .ex8 .visual {
+    height: 100px;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .ex8 .card {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+  }`,
+  codepen: 'https://codepen.io/una/pen/ExPYomq'
 };
 
 populateCode("ex1");
@@ -237,3 +255,7 @@ populateCode("ex3");
 populateCode("ex4");
 populateCode("ex5");
 populateCode("ex6");
+populateCode("ex7");
+populateCode("ex8");
+populateCode("ex9");
+populateCode("ex10");
