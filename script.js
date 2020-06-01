@@ -111,7 +111,24 @@ const ex4 = {
   codepen: 'https://codepen.io/una/pen/bGVXPWB'
 };
 
+const ex5 = {
+  html: `
+  <div class="parent">
+    <header class="blue section">Header</header>
+    <main class="coral section">Main</main>
+    <footer class="purple section">Footer Content</footer>
+  </div>
+  `,
+  css: `
+  .ex4 .parent {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }`,
+  codepen: 'https://codepen.io/una/pen/bGVXPWB'
+};
+
 populateCode("ex1");
 populateCode("ex2");
 populateCode("ex3");
 populateCode("ex4");
+populateCode("ex5");
