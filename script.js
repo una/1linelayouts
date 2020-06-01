@@ -62,14 +62,14 @@ const ex2 = {
   .ex2 .parent {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .ex2 .box {
-    /*  If we don't want the items to stretch
-        on new lines: */
-    flex: 0 1 200px;
-    /*  If we do want the items to stretch: */
+    /*  Items stretching: */
     flex: 1 1 200px;
+    /*  No stretching: */
+    flex: 0 1 150px;
     margin: 5px;
   }`,
   codepen: 'https://codepen.io/una/pen/WNQdBza'

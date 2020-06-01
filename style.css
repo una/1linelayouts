@@ -91,6 +91,7 @@ section:nth-child(2n) .tab-area button.active {
   overflow: hidden;
   height: 100%;
   width: 100%;
+  z-index: 2;
 }
 
 /* .ex-container::before {
@@ -166,4 +167,15 @@ section:nth-child(2n) .tab-area button.active {
 .ex-container .section {
   font-size: 1.5rem;
   padding: 1rem;
+}
+
+.taglist {
+  di
+}
+
+.taglist li {
+    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
+    font-size: 14px;
+    list-style: none;
 }
