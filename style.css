@@ -111,7 +111,10 @@ section:nth-child(2n) .tab-area button.active {
   height: 100%;
   width: 100%;
   z-index: 2;
-  box-shadow: 0 0 20px -10px hsl(187, 97%, 24%)
+  box-shadow: 0 0 20px -10px hsl(187, 97%, 24%);
+  display: grid;
+  align-items: center;
+  background: white;
 }
 
 /* .ex-container::before {

@@ -213,17 +213,17 @@ const ex8 = {
   <div class="parent white">
     <div class="card yellow">
       <h3>Title - Card 1</h3>
-      <p>Medium length description with a few more words here.</p>
+      <p contenteditable>Medium length description with a few more words here.</p>
       <div class="visual pink"></div>
     </div>
     <div class="card yellow">
       <h3>Title - Card 2</h3>
-      <p>Long Description. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      <p contenteditable>Long Description. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
       <div class="visual blue"></div>
     </div>
     <div class="card yellow">
       <h3>Title - Card 3</h3>
-      <p>Short Description.</p>
+      <p contenteditable>Short Description.</p>
       <div class="visual green"></div>
     </div>
   </div>
