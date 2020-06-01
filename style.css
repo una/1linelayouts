@@ -72,6 +72,10 @@ code {
   border: 1px solid var(--purple--b)
 }
 
+.white {
+  background-color: white;
+}
+
 section:nth-child(2n) {
   background-color: var(--light-gray-blue);  
 }

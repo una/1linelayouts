@@ -53,7 +53,7 @@ const ex1 = {
 
 const ex2 = {
   html: `
-  <div class="parent pink">
+  <div class="parent white">
     <div class="box green">1</div>
     <div class="box green">2</div>
     <div class="box green">3</div>
@@ -150,8 +150,90 @@ const ex5 = {
   codepen: 'https://codepen.io/una/pen/bGVXPWB'
 };
 
+const ex6 = {
+  html: `
+  <div class="parent white">
+    <div class="span-12 green section">Span 12</div>
+    <div class="span-6 purple section">Span 6</div>
+    <div class="span-4 blue section">Span 4</div>
+    <div class="span-2 yellow section">Span 2</div>
+  </div>
+  `,
+  css: `
+  .ex6 .parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  
+  .ex6 .span-12 {
+    grid-column: 1 / 13;
+  }
+
+  .ex6 .span-6 {
+    grid-column: 1 / 7;
+  }
+
+  .ex6 .span-4 {
+    grid-column: 4 / 9;
+  }
+
+  .ex6 .span-2 {
+    grid-column: 3 / 5;
+  }
+
+  /* centering text */
+  .ex6 .section {
+    display: grid;
+    place-items: center;
+    text-align: center
+  }`,
+  codepen: 'https://codepen.io/una/pen/eYJOYjj'
+};
+
+const ex7 = {
+  html: `
+  <div class="parent white">
+    <div class="span-12 green section">Span 12</div>
+    <div class="span-6 purple section">Span 6</div>
+    <div class="span-4 blue section">Span 4</div>
+    <div class="span-2 yellow section">Span 2</div>
+  </div>
+  `,
+  css: `
+  .ex7 .parent {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .ex6 .span-12 {
+    grid-column: 1 / 13;
+  }
+
+  .ex6 .span-6 {
+    grid-column: 1 / 7;
+  }
+
+  .ex6 .span-4 {
+    grid-column: 4 / 9;
+  }
+
+  .ex6 .span-2 {
+    grid-column: 3 / 5;
+  }
+
+  /* centering text */
+  .ex6 .section {
+    display: grid;
+    place-items: center;
+    text-align: center
+  }`,
+  codepen: 'https://codepen.io/una/pen/oNbvNQv'
+};
+
 populateCode("ex1");
 populateCode("ex2");
 populateCode("ex3");
 populateCode("ex4");
 populateCode("ex5");
+populateCode("ex6");
