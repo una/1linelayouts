@@ -166,7 +166,7 @@ section:nth-child(2n) .tab-area button.active {
 .section-container {
   max-width: var(--pageMax);
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 6rem 2rem;
 }
 
 .codepen-link {
