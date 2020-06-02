@@ -44,9 +44,6 @@ const ex1 = {
   .ex1 .parent {
     display: grid;
     place-items: center;
-
-    width: 100%;
-    height: 100%;
   }`,
   codepen: 'https://codepen.io/una/pen/YzyYbBx'
 };
@@ -67,7 +64,7 @@ const ex2 = {
 
   .ex2 .box {
     /*  Items stretching: */
-    flex: 1 1 200px;
+    flex: 1 1 150px;
     /*  No stretching: */
     flex: 0 1 150px;
     margin: 5px;
