@@ -95,9 +95,9 @@ const ex3 = {
 const ex4 = {
   html: `
   <div class="parent">
-    <header class="blue section">Header</header>
-    <main class="coral section">Main</main>
-    <footer class="purple section">Footer Content</footer>
+    <header class="blue section" contenteditable>Header</header>
+    <main class="coral section" contenteditable>Main</main>
+    <footer class="purple section" contenteditable>Footer Content</footer>
   </div>
   `,
   css: `
@@ -121,7 +121,7 @@ const ex5 = {
   css: `
   .ex5 .parent {
     display: grid;
-    grid-template: auto 1fr auto / auto 1fr auto
+    grid-template: auto 1fr auto / auto 1fr auto;
   }
   
   .ex5 header {
