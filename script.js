@@ -285,6 +285,36 @@ const ex9 = {
   codepen: 'https://codepen.io/una/pen/QWyLxaL'
 };
 
+const ex10 = {
+  html: `
+  <div class="parent white">
+    <div class="card blue">
+      <h1>Video Title</h1>
+      <div class="visual green"></div>
+      <p>Descriptive Text. This demo works in Chromium 84+.</p>
+    </div>
+  </div>
+  `,
+  css: `
+  .ex10 .parent {
+    display: grid;
+    place-items: center;
+  }
+
+  .ex10 .visual {
+    aspect-ratio: 16 / 9;
+  }
+
+  .ex10 .card {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  `,
+  codepen: 'https://codepen.io/una/pen/xxZKzaX'
+};
+
 
 
 populateCode("ex1");
