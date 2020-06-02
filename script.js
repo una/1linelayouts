@@ -200,7 +200,7 @@ const ex7 = {
   .ex7 .parent {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }`,
   codepen: 'https://codepen.io/una/pen/oNbvNQv'
 };
