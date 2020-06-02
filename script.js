@@ -254,6 +254,35 @@ const ex8 = {
   codepen: 'https://codepen.io/una/pen/ExPYomq'
 };
 
+const ex9 = {
+  html: `
+  <div class="parent white">
+    <div class="card pink">
+      <h1>Title Here</h1>
+      <div class="visual yellow"></div>
+      <p>Descriptive Text. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed est error repellat veritatis.</p>
+    </div>
+  </div>
+  `,
+  css: `
+  .ex9 .parent {
+    display: grid;
+    place-content: center;
+  }
+
+  .ex9 .visual {
+      height: 100px;
+      width: 100%;
+    }
+
+  .ex9 .card {
+    width: clamp(300px, 50vw, 500px);
+    display: flex;
+    flex-direction: column;
+  }`,
+  codepen: 'https://codepen.io/una/pen/QWyLxaL'
+};
+
 populateCode("ex1");
 populateCode("ex2");
 populateCode("ex3");
