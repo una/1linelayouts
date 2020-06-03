@@ -63,10 +63,8 @@ const ex2 = {
   }
 
   .ex2 .box {
-    /*  Items stretching: */
-    flex: 1 1 150px;
-    /*  No stretching: */
-    flex: 0 1 150px;
+    flex: 1 1 150px; /*  Stretching: */
+    flex: 0 1 150px; /*  No stretching: */
     margin: 5px;
   }`,
   codepen: 'https://codepen.io/una/pen/WNQdBza'
