@@ -25,6 +25,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: system-ui, sans-serif;
+  overflow: auto;
   scroll-snap-type: block mandatory;
   scroll-padding: 4rem;
 }
@@ -131,11 +132,13 @@ section:nth-child(2n) .tab-area button.active {
 .meta,
 footer {
   text-align: center;
-  margin: 4rem;
+  padding: 4rem;
+  margin: 0 auto;
 }
 
-footer {
-  background: var(--purple);
+footer a {
+  color: white;
+  color: hsl(207, 90%, 54%);
 }
 
 .code-area {
@@ -257,6 +260,6 @@ footer {
   
   .meta {
     max-width: 46ch;
-    margin: 8rem auto;
+    padding: 8rem auto;
   }
 }
