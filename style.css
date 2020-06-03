@@ -25,9 +25,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: system-ui, sans-serif;
-  overflow: auto;
-  scroll-snap-type: block mandatory;
-  scroll-padding: 4rem;
 }
 
 h2 {
@@ -183,7 +180,6 @@ footer a {
   max-width: var(--pageMax);
   margin: 0 auto;
   padding: 4rem 2rem;
-  scroll-snap-align: center;
 }
 
 .codepen-link {
