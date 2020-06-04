@@ -127,13 +127,13 @@ section:nth-child(2n) .tab-area button.active {
 } */
 
 .meta,
-footer {
+.footer {
   text-align: center;
   padding: 4rem;
   margin: 0 auto;
 }
 
-footer a {
+.footer a {
   color: white;
   color: hsl(207, 90%, 54%);
 }
@@ -251,7 +251,7 @@ footer a {
   }
   
   .section-container {
-    padding: 8rem 2rem;
+    padding: 8rem 4rem;
   }
   
   .meta {
