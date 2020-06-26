@@ -76,6 +76,17 @@ code {
   background-color: white;
 }
 
+.meta h1 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.meta p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
 section:nth-child(2n) {
   background-color: var(--light-gray-blue);  
 }
@@ -257,5 +268,11 @@ section:nth-child(2n) .tab-area button.active {
   .meta {
     max-width: 46ch;
     padding: 8rem auto;
+  }
+}
+
+@media screen and (max-width: 811px) {
+  ex-container {
+    height: 300px;
   }
 }
