@@ -219,7 +219,7 @@ section:nth-child(2n) .tab-area button.active {
 
 .meta-area {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;
   margin-bottom: 1rem;
 }
@@ -272,7 +272,37 @@ section:nth-child(2n) .tab-area button.active {
 }
 
 @media screen and (max-width: 811px) {
-  ex-container {
+  .ex-container {
     height: 300px;
+  }
+  
+  .ex-section {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  .box {
+    font-size: 1rem;
+  }
+
+  .ex-container .section {
+    font-size: 1rem;
+  }
+  
+  .section-title code {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  
+  .support-area {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .code-area {
+    height: 300px;
+  }
+  
+  .code-container {
+    font-size: 1.15rem;
   }
 }
