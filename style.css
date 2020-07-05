@@ -87,6 +87,10 @@ code {
   font-weight: 300;
 }
 
+.meta a {
+  color: hsl(207, 90%, 54%);
+}
+
 section:nth-child(2n) {
   background-color: var(--light-gray-blue);  
 }
