@@ -310,3 +310,19 @@ section:nth-child(2n) .tab-area button.active {
     font-size: 1.15rem;
   }
 }
+
+.yt-embed {
+  padding-top: 56.25%;
+  position: relative;
+  width: 100%;
+}
+
+.yt-embed iframe {
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
