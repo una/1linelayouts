@@ -161,19 +161,19 @@ const ex6 = {
   }
   
   .ex6 .span-12 {
-    grid-column: 1 / 13;
+    grid-column: 1 / span 12;
   }
 
   .ex6 .span-6 {
-    grid-column: 1 / 7;
+    grid-column: 1 / span 6;
   }
 
   .ex6 .span-4 {
-    grid-column: 4 / 9;
+    grid-column: 4 / span 4;
   }
 
   .ex6 .span-2 {
-    grid-column: 3 / 5;
+    grid-column: 3 / span 2;
   }
 
   /* centering text */
