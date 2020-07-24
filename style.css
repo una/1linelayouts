@@ -326,3 +326,17 @@ section:nth-child(2n) .tab-area button.active {
   transform: translate(-50%, -50%);
   width: 100%;
 }
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+  border: 1px solid var(--blue--b);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
+}
