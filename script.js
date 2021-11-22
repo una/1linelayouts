@@ -286,7 +286,7 @@ const ex10 = {
     <div class="card blue">
       <h1>Video Title</h1>
       <div class="visual green"></div>
-      <p>Descriptive Text. This demo works in Chromium 84+.</p>
+      <p>Descriptive text for aspect ratio card demo.</p>
     </div>
   </div>
   `,
